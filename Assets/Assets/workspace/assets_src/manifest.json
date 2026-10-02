@@ -1,0 +1,11 @@
+{
+  "game_id": "ant_house_fps",
+  "assets": [
+    {"name":"animated_ant","source":"https://opengameart.org/sites/default/files/ant.blend","license":"CC0","author":"mujtaba-io","license_page":"https://opengameart.org/content/ant-3d-model-rigging-animated-low-poly-ish","export":"assets_src/exports/ant_animated.fbx","changes":["Replaced missing author-local image references with faction chitin materials","Preserved matching 38-bone skin and walk/bite actions","Generic Unity rig and explicit root orientation/foot offset"],"verification":"542 vertices, no unweighted vertices; material-safe FBX reimport; real runtime animation advancement"},
+    {"name":"anthill","source":"https://static.seeles.ai/media/assets/7c1eb8903c334ebf83f030460d80d4c7_1790510900238153200_6bc5e493a899dd43b3557ca9fe75ae01_17905108280601383899050465260534.glb","channel":"Seele generation","export":"assets_src/exports/anthill_unity.fbx","verification":"Blender admission and Unity placement, materials, collision and projectile damage"},
+    {"name":"bottle","source":"https://static.seeles.ai/data/asset/export/46f64a4a-228c-44d7-87de-8fde4fc8702d/664613/thing_ed84bbfd-61ad-455a-b0bb-8357752ba3fa.glb","channel":"Seele asset retrieval","export":"assets_src/exports/soda_bottle_unity.fbx","changes":["Material-preserving conversion","Upright rotation and floor snapping"]},
+    {"name":"chair","source":"https://asset.seeles.ai/asset/export/f9e46189-4d4e-45a4-a62c-18c03ab197c4/923708/thing_54946279-831a-42cf-89c0-7987ec2b8df4.glb","channel":"Seele asset retrieval","local":"assets_src/kitchen_chair.glb","changes":["Giant kitchen scale"]},
+    {"name":"bgm","source":"https://asset.seeles.ai/asset/export/d98dba0e-cae3-4aeb-9566-afaf35959377/154627/bgm_154627_3003240.mp3","channel":"Seele asset retrieval"},
+    {"name":"acid_sound","source":"https://asset.seeles.ai/asset/export/cc165ff2-9b68-45aa-8f61-8c98cc493571/173713/sfx_173713_3201982.mp3","channel":"Seele asset retrieval"}
+  ]
+}

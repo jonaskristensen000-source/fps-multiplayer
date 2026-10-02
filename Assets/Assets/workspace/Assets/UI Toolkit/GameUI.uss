@@ -1,0 +1,44 @@
+:root {
+    --col-bg: rgba(28, 19, 12, 0.82);
+    --col-panel: rgba(42, 27, 17, 0.97);
+    --col-text: rgb(255, 240, 214);
+    --col-muted: rgb(214, 186, 150);
+    --col-accent: rgb(242, 196, 74);
+    --col-danger: rgb(214, 92, 42);
+    --col-ally: rgb(166, 214, 106);
+    --space: 12px;
+    --radius: 4px;
+    -unity-font-definition: url("project:/Assets/TextMesh Pro/Fonts/LiberationSans.ttf");
+    flex-grow: 1;
+}
+.screen { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--col-bg); align-items: center; justify-content: center; }
+.panel { width: 610px; max-width: 88%; background-color: var(--col-panel); border-left-width: 5px; border-left-color: var(--col-accent); border-radius: var(--radius); padding: 28px 34px; align-items: stretch; }
+.title { font-size: 44px; -unity-font-style: bold; color: var(--col-accent); margin-bottom: 12px; white-space: normal; }
+.subtitle { font-size: 20px; color: var(--col-muted); margin-bottom: 20px; white-space: normal; }
+.body { font-size: 19px; color: var(--col-text); margin-bottom: 16px; white-space: normal; }
+.btn { height: 52px; background-color: var(--col-accent); color: rgb(42,27,17); font-size: 22px; -unity-font-style: bold; border-radius: var(--radius); margin-top: 12px; border-width: 0; transition-duration: .12s; }
+.btn:hover { background-color: var(--col-text); scale: 1.02 1.02; }
+.btn:active { background-color: var(--col-ally); scale: .98 .98; }
+#start-screen { align-items: flex-start; padding-left: 6%; background-color: rgba(28,19,12,.35); }
+#start-screen .panel { width: 520px; }
+#how-btn, #quit-btn, #result-menu-btn { background-color: rgb(91,64,40); color: var(--col-text); }
+.hud { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.hud-tl, .hud-tr { position: absolute; top: 22px; width: 290px; background-color: rgba(28,19,12,.8); padding: 12px 16px; border-radius: 4px; }
+.hud-tl { left: 24px; }
+.hud-tr { right: 24px; }
+.hud-spawn { position: absolute; right: 24px; bottom: 86px; width: 250px; background-color: rgba(28,19,12,.86); padding: 12px 14px; border-left-width: 4px; border-left-color: var(--col-accent); border-radius: 4px; }
+.spawn-caption { font-size: 15px; color: var(--col-muted); margin-bottom: 8px; height: 20px; white-space: nowrap; }
+.spawn-btn { height: 42px; margin-top: 8px; border-width: 0; border-radius: 4px; font-size: 18px; -unity-font-style: bold; transition-duration: .12s; }
+.collector-btn { background-color: var(--col-accent); color: rgb(42,27,17); }
+.soldier-btn { background-color: var(--col-ally); color: rgb(28,19,12); }
+.spawn-btn:hover { scale: 1.03 1.03; }
+.spawn-btn:active { scale: 0.97 0.97; }
+.bar-label { font-size: 19px; -unity-font-style: bold; color: var(--col-text); margin-bottom: 5px; height: 25px; white-space: nowrap; }
+.bar { width: 258px; height: 8px; background-color: rgb(83,60,41); margin-bottom: 10px; overflow: hidden; }
+.bar-fill { height: 8px; background-color: var(--col-ally); width: 100%; }
+.bar-fill-hill { height: 8px; background-color: var(--col-danger); width: 100%; }
+.crosshair { position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin-left: -5px; margin-top: -5px; border-width: 2px; border-color: var(--col-text); border-radius: 5px; }
+.hint { position: absolute; bottom: 24px; left: 16%; right: 16%; padding: 10px 16px; -unity-text-align: middle-center; color: var(--col-text); background-color: rgba(28,19,12,.78); font-size: 18px; white-space: normal; }
+.load-wrap { width: 540px; }
+.load-bar { height: 12px; background-color: rgb(83,60,41); margin-top: 16px; overflow: hidden; }
+.load-fill { height: 12px; width: 0%; background-color: var(--col-accent); }

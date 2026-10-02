@@ -1,0 +1,76 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="project:/Assets/UI Toolkit/GameUI.uss" />
+
+    <ui:VisualElement name="load-screen" class="screen" picking-mode="Position">
+        <ui:VisualElement class="panel load-wrap">
+            <ui:Label text="COLONY FLOOR" class="title" picking-mode="Ignore" />
+            <ui:Label name="load-label" text="Gathering crumbs 0/8" class="subtitle" picking-mode="Ignore" />
+            <ui:VisualElement class="load-bar" picking-mode="Ignore">
+                <ui:VisualElement name="load-fill" class="load-fill" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="start-screen" class="screen" style="display: none;" picking-mode="Position">
+        <ui:VisualElement class="panel">
+            <ui:Label text="COLONY FLOOR" class="title" picking-mode="Ignore" />
+            <ui:Label text="You are a tiny ant. The kitchen is a war zone." class="subtitle" picking-mode="Ignore" />
+            <ui:Button name="play-btn" text="Raid the Hill" class="btn" />
+            <ui:Button name="how-btn" text="How to Play" class="btn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="how-screen" class="screen" style="display: none;" picking-mode="Position">
+        <ui:VisualElement class="panel">
+            <ui:Label text="How to Play" class="title" picking-mode="Ignore" />
+            <ui:Label text="WASD move · Mouse look · Shift sprint · Space jump&#10;Left click sprays formic acid · walk into walls to climb&#10;Walk into crumbs or press E to gather food&#10;Hold Alt and use HUD buttons, or Q/C, to spawn ants&#10;Soldier (3 food) attacks nearest enemies and the hill&#10;Collector (2 food) gathers crumbs for the nest&#10;Defend your nest. If you fall, you respawn there. If the nest falls, the colony is lost." class="body" picking-mode="Ignore" />
+            <ui:Button name="how-back-btn" text="Back" class="btn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="pause-screen" class="screen" style="display: none;" picking-mode="Position">
+        <ui:VisualElement class="panel">
+            <ui:Label text="Paused" class="title" picking-mode="Ignore" />
+            <ui:Button name="resume-btn" text="Resume" class="btn" />
+            <ui:Button name="pause-how-btn" text="How to Play" class="btn" />
+            <ui:Button name="quit-btn" text="Menu" class="btn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="result-screen" class="screen" style="display: none;" picking-mode="Position">
+        <ui:VisualElement class="panel">
+            <ui:Label name="result-title" text="Victory" class="title" picking-mode="Ignore" />
+            <ui:Label name="result-score" text="Score 0" class="subtitle" picking-mode="Ignore" />
+            <ui:Button name="restart-btn" text="Raid Again" class="btn" />
+            <ui:Button name="result-menu-btn" text="Menu" class="btn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="hud" class="hud" picking-mode="Ignore" style="display: none;">
+        <ui:VisualElement class="hud-tl" picking-mode="Ignore">
+            <ui:Label name="hp-label" text="Health 100 / 100" class="bar-label" picking-mode="Ignore" />
+            <ui:VisualElement class="bar" picking-mode="Ignore">
+                <ui:VisualElement name="hp-fill" class="bar-fill" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:Label name="food-label" text="Food 0 · Soldiers 0/4" class="bar-label" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement class="hud-tr" picking-mode="Ignore">
+            <ui:Label name="hill-label" text="Enemy Hill 420" class="bar-label" picking-mode="Ignore" />
+            <ui:VisualElement class="bar" picking-mode="Ignore">
+                <ui:VisualElement name="hill-fill" class="bar-fill-hill" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:Label name="nest-label" text="Nest 360" class="bar-label" picking-mode="Ignore" />
+            <ui:VisualElement class="bar" picking-mode="Ignore">
+                <ui:VisualElement name="nest-fill" class="bar-fill" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:Label name="score-label" text="Score 0" class="bar-label" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement name="spawn-dock" class="hud-spawn" picking-mode="Position">
+            <ui:Label text="Hold Alt · spawn from nest" class="spawn-caption" picking-mode="Ignore" />
+            <ui:Button name="spawn-collector-btn" text="Collector  2 food" class="spawn-btn collector-btn" />
+            <ui:Button name="spawn-soldier-btn" text="Soldier  3 food" class="spawn-btn soldier-btn" />
+        </ui:VisualElement>
+        <ui:VisualElement class="crosshair" picking-mode="Ignore" />
+        <ui:Label name="hint-label" text="Hold Alt to spawn ants · climb walls · defend the nest" class="hint" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>
